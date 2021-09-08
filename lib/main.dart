@@ -1,7 +1,10 @@
+// @dart=2.11
+
 import "dart:io";
 import 'package:flutter/material.dart';
 import "package:path_provider/path_provider.dart";
 
+import "notes/Notes.dart";
 import "utils.dart" as utils;
 
 void main() {
@@ -40,7 +43,7 @@ class FlutterBook extends StatelessWidget {
             children: [
               Text("Tab1"),
               Text("Tab2"),
-              Text("Tab3"),
+              Notes(),
               Text("Tab4")
             ],
           ),
